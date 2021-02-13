@@ -1,0 +1,30 @@
+﻿<html>
+<body>
+Enter number: <input type="text" id="myText1" >
+<p id="a"></p>
+<button onclick="flipInt()">Try it</button>
+   
+<script>
+function flipInt(){
+    var digit, result = 0
+  var n = document.getElementById("myText1").value;
+    while( n ){
+        digit = n % 10  
+        result = (result * 10) + digit  
+        n = n/10|0  
+        document.getElementById("a").innerHTML = result;
+  
+    }  
+    
+}
+
+
+
+ alert(
+   "Reversed number: " + flipInt( document.getElementById("myText1").value ) 
+ )
+
+</script>
+
+</body>
+</html>
